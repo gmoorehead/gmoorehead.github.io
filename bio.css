@@ -1,0 +1,69 @@
+.bigBoss {
+  height: 100%;
+  background-color: #8AC0BB; 
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+/* make the tabs stop stack by adding flex */
+.tabTree {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style each tab content individually */
+#homePage { background-color: #8AC0BB; }
+#navy { background-color: blue; }
+#civilian { background-color: red; }
+#army { background-color: green; }
+#family { background-color: orange; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.bodyContent { 
+ height: 100%;
+ background-color: #8AC0BB;
+ text-align: center;
+}
+
+.chosenContent {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #8AC0BB;
+}
+
+.chosenImg {
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+/* Style the tab content (and add height:100% for full page content) */
