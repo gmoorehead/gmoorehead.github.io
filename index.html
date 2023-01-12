@@ -65,120 +65,121 @@
   </div>
   
   </body>
+  
   <script>
     function openLink(cityName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  
+  // Remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = ""
   }
 
-  
+  // Show specific tab content
   document.getElementById(cityName).style.display = "block";
   elmnt.style.backgroundColor = color;
-  }
+}
 
-  const audio = new Audio("https://www.freesoundslibrary.com/wp-content/uploads/2022/11/taco-bell-sound.mp3");
-  const buttons = document.querySelectorAll("button")
+const audio = new Audio("https://www.freesoundslibrary.com/wp-content/uploads/2022/11/taco-bell-sound.mp3");
+const buttons = document.querySelectorAll("button")
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
     audio.play()
-    })
   })
+})
 
-  document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 
-  const homeSlideInfo = document.getElementById("defaultOpen")
-  homeSlideInfo.addEventListener("click", () => {
-  const homeParagraph1 = document.getElementById("pTextTarget")
-  homeParagraph1.innerHTML = "He's a good guy"
-  const homeParagraph2 = document.getElementById("pTextTarget2")
-  homeParagraph2.innerHTML = ""
-  const homeParagraph3 = document.getElementById("pTextTarget3")
-  homeParagraph3.innerHTML = ""
-  const homeH2 = document.getElementById("h2Target")
-  homeH2.innerHTML = "Meet Greg"
-  const homeImg = document.getElementById("insertImg")
-  homeImg.src="https://media.istockphoto.com/id/499248161/photo/adult-businessman.jpg?s=612x612&w=0&k=20&c=d9ABx3gd_iyTtncEDeFDCNRsTJphOPSIYsp-HbIRv4g=" 
-  homeImg.alt="Image Is Fucked"
-  homeImg.style.height = ("300px")
-  homeImg.style.width = ("250px")
+const homeSlideInfo = document.getElementById("defaultOpen")
+homeSlideInfo.addEventListener("click", () => {
+const homeParagraph1 = document.getElementById("pTextTarget")
+homeParagraph1.innerHTML = "He's a good guy"
+const homeParagraph2 = document.getElementById("pTextTarget2")
+homeParagraph2.innerHTML = ""
+const homeParagraph3 = document.getElementById("pTextTarget3")
+homeParagraph3.innerHTML = ""
+const homeH2 = document.getElementById("h2Target")
+homeH2.innerHTML = "Meet Greg"
+const homeImg = document.getElementById("insertImg")
+homeImg.src="https://media.istockphoto.com/id/499248161/photo/adult-businessman.jpg?s=612x612&w=0&k=20&c=d9ABx3gd_iyTtncEDeFDCNRsTJphOPSIYsp-HbIRv4g=" 
+homeImg.alt="Image Is Fucked"
+homeImg.style.height = ("300px")
+homeImg.style.width = ("250px")
 
 
-  })
+})
 
-  const firstSlideInfo = document.getElementById("slideOne")
-  firstSlideInfo.addEventListener("click", () => {
-  const firstParagraph = document.getElementById("pTextTarget")
-  firstParagraph.innerHTML = "Greg innitially joined the U.S. Navy in October of 2014, and after 8 weeks of the vigourous activities of folding clothes and marching to 'Anchors Away', he was declared before the world to be a sailor. From Great Lakes, Illinois to Coronado, Californina to Naval Air Training Center Pensacola, Florida, Greg was shipped around to ultimately join the prestigous brotherhood that is being a tech for the F-18F."
+const firstSlideInfo = document.getElementById("slideOne")
+firstSlideInfo.addEventListener("click", () => {
+const firstParagraph = document.getElementById("pTextTarget")
+firstParagraph.innerHTML = "Greg innitially joined the U.S. Navy in October of 2014, and after 8 weeks of the vigourous activities of folding clothes and marching to 'Anchors Away', he was declared before the world to be a sailor. From Great Lakes, Illinois to Coronado, Californina to Naval Air Training Center Pensacola, Florida, Greg was shipped around to ultimately join the prestigous brotherhood that is being a tech for the F-18F."
 
-  const firstParagraph2 = document.getElementById("pTextTarget2")
-  firstParagraph2.innerHTML = "In the spring of 2015 Greg would deploy for the first time on-board the USS Eisenhower(CVN-69) in support of Operation Inherent Resolve. For successfully launching and recovering well over 1,000 aircraft during the 11 months at sea, Greg was awarded the title Plane Captain of The Year. For his achievement of going above and beyond the call of duty and out-preforming his peers, Greg was awarded with the annimosity of most and a 4 day weekend pass."
+const firstParagraph2 = document.getElementById("pTextTarget2")
+firstParagraph2.innerHTML = "In the spring of 2015 Greg would deploy for the first time on-board the USS Eisenhower(CVN-69) in support of Operation Inherent Resolve. For successfully launching and recovering well over 1,000 aircraft during the 11 months at sea, Greg was awarded the title Plane Captain of The Year. For his achievement of going above and beyond the call of duty and out-preforming his peers, Greg was awarded with the annimosity of most and a 4 day weekend pass."
 
-  const firstParagraph3 = document.getElementById("pTextTarget3")
-  firstParagraph3.innerHTML = "After a brief 4 months ashore near the end of spring in 2016, Greg would deploy again this time aboard the USS Lincoln(CVN-72) for an additional 9 months still in support of the forever war on terrorism. Indiviually augmented to 2nd Marine Division Greg finally got to fufil his life long goal of riding sidecar to several low-priority missions in the desert during what he remembers fondly as 'hotter than the devils assh*le'. Summer temperatures reached a regular 140°. After returning home, Greg was promoted to Petty Officer Second Class (E5) and led 34 hard-charging sailors to success until his tenure in the Navy was over in June of 2019. What comes to follow is known to several as a shitshow."
+const firstParagraph3 = document.getElementById("pTextTarget3")
+firstParagraph3.innerHTML = "After a brief 4 months ashore near the end of spring in 2016, Greg would deploy again this time aboard the USS Lincoln(CVN-72) for an additional 9 months still in support of the forever war on terrorism. Indiviually augmented to 2nd Marine Division Greg finally got to fufil his life long goal of riding sidecar to several low-priority missions in the desert during what he remembers fondly as 'hotter than the devils assh*le'. Summer temperatures reached a regular 140°. After returning home, Greg was promoted to Petty Officer Second Class (E5) and led 34 hard-charging sailors to success until his tenure in the Navy was over in June of 2019. What comes to follow is known to several as a shitshow."
 
-  const firstH2 = document.getElementById("h2Target")
-  firstH2.innerHTML = "Lots of Seamen"
+const firstH2 = document.getElementById("h2Target")
+firstH2.innerHTML = "Lots of Seamen"
 
-  const firstImg = document.getElementById("insertImg")
-  firstImg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrzkQbxUXbzw2y5gU0nw44NquB589wDvfNw&usqp=CAU" 
-  firstImg.alt="Image Is Fucked"
-  firstImg.style.width = ("350px")
+const firstImg = document.getElementById("insertImg")
+firstImg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrzkQbxUXbzw2y5gU0nw44NquB589wDvfNw&usqp=CAU" 
+firstImg.alt="Image Is Fucked"
+firstImg.style.width = ("350px")
 
-  })
+})
 
-  const secondSlideInfo = document.getElementById("slideTwo")
-  secondSlideInfo.addEventListener("click", () => {
-  const secondParagraph = document.getElementById("pTextTarget")
-  secondParagraph.innerHTML = "Now in the Summer of 2019 Greg was all but a free man in his mind. Many promising career and life oppurtunities now presented themselves to Greg as his journey as a new man. He energetticaly declined all of them out of a boyish spite formed out of years of neglect and the terrifying field of the unknown that lay ahead of him. Short on nothing but funds, Greg started working with his friend that started up his now flourishing construction company. Doing manual labor was the best thing for this renegade youth. Strengthing his hands and crippling his body."
-  const secondParagraph2 = document.getElementById("pTextTarget2")
-  secondParagraph2.innerHTML = "As the weeks flew by in a fury of uninhibited drinking and controlled substances, Greg realized he needed a change. So he proposed to his long time girlfriend and bought a truck that he couldn't afford. He was happy but unfufilled with his life."
-  const secondParagraph3 = document.getElementById("pTextTarget3")
-  secondParagraph3.innerHTML = "After a chance encounter with a SOF recruiter at the gym that Greg worked out at, Greg was once again filled with the sense of patriotism and adventure that he felt he was lacking. The lack of money and knowledge that he was accomplishing next to nothing had nothing to do with his decision I'm sure. On November 11 of 2019, Greg was off to his next great adventure kicking and screaming the whole way."
-  const secondH2 = document.getElementById("h2Target")
-  secondH2.innerHTML = "For Just About 6 Months"
-  const secondImg = document.getElementById("insertImg")
-  secondImg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUGb5z9V7KxIf6B40umQwplsrTSlvslwULA&usqp=CAU"
-  secondImg.alt="Image Is Fucked"
-  })
+const secondSlideInfo = document.getElementById("slideTwo")
+secondSlideInfo.addEventListener("click", () => {
+const secondParagraph = document.getElementById("pTextTarget")
+secondParagraph.innerHTML = "Now in the Summer of 2019 Greg was all but a free man in his mind. Many promising career and life oppurtunities now presented themselves to Greg as his journey as a new man. He energetticaly declined all of them out of a boyish spite formed out of years of neglect and the terrifying field of the unknown that lay ahead of him. Short on nothing but funds, Greg started working with his friend that started up his now flourishing construction company. Doing manual labor was the best thing for this renegade youth. Strengthing his hands and crippling his body."
+const secondParagraph2 = document.getElementById("pTextTarget2")
+secondParagraph2.innerHTML = "As the weeks flew by in a fury of uninhibited drinking and controlled substances, Greg realized he needed a change. So he proposed to his long time girlfriend and bought a truck that he couldn't afford. He was happy but unfufilled with his life."
+const secondParagraph3 = document.getElementById("pTextTarget3")
+secondParagraph3.innerHTML = "After a chance encounter with a SOF recruiter at the gym that Greg worked out at, Greg was once again filled with the sense of patriotism and adventure that he felt he was lacking. The lack of money and knowledge that he was accomplishing next to nothing had nothing to do with his decision I'm sure. On November 11 of 2019, Greg was off to his next great adventure kicking and screaming the whole way."
+const secondH2 = document.getElementById("h2Target")
+secondH2.innerHTML = "For Just About 6 Months"
+const secondImg = document.getElementById("insertImg")
+secondImg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUGb5z9V7KxIf6B40umQwplsrTSlvslwULA&usqp=CAU"
+secondImg.alt="Image Is Fucked"
+})
 
-  const thirdSlideInfo = document.getElementById("slideThree")
-  thirdSlideInfo.addEventListener("click", () => {
-  const thirdParagraph = document.getElementById("pTextTarget")
-  thirdParagraph.innerHTML = "Greg, now a SPC(E4) after resigning his rank for multiple reasons, finished his initial infantry training at Fort Benning, Georgia and headed down the road to Airborne School where he developed a fear of flying after his parachute failed to function due to a massive hole. With all bones intact, Greg headed to Fort Bragg, North Carolina."
-  const thirdParagraph2 = document.getElementById("pTextTarget2")
-  thirdParagraph2.innerHTML = "Now in North Carolina, in the summer of 2020, Greg finally gave his fiance the courthouse wedding she never dreamed of in the Hoke County Municipal Courthouse, which doubled as the jail. Sometime went by and Greg was given the oppurtinity to attend Ranger Assessment and Selection where he was selected and sent to his current station in the great state of Washington as a proud member of Second Battalion Ranger Regiment. "
-  const thirdParagraph3 = document.getElementById("pTextTarget3")
-  thirdParagraph3.innerHTML = "Greg then was sent to the herculean task that all Rangers must overcome; Ranger School. After a brief stint as a Darby recycle, Greg earned the coveted Ranger Tab with flying colors at the sacrifice of 25lbs and the remaining shred of dignity he didn't know he had left. Now, with the power of the Tab propelling him forward in his career, obstacles in his way seemed trivial."
-  const thirdH2 = document.getElementById("h2Target")
-  thirdH2.innerHTML = "He's In The Army Now"
-  const thirdImg = document.getElementById("insertImg")
-  thirdImg.src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Distinctive_unit_insignia_of_the_75th_Ranger_Regiment.svg/188px-Distinctive_unit_insignia_of_the_75th_Ranger_Regiment.svg.png"
-  thirdImg.alt="Image Is Fucked"
-  })
+const thirdSlideInfo = document.getElementById("slideThree")
+thirdSlideInfo.addEventListener("click", () => {
+const thirdParagraph = document.getElementById("pTextTarget")
+thirdParagraph.innerHTML = "Greg, now a SPC(E4) after resigning his rank for multiple reasons, finished his initial infantry training at Fort Benning, Georgia and headed down the road to Airborne School where he developed a fear of flying after his parachute failed to function due to a massive hole. With all bones intact, Greg headed to Fort Bragg, North Carolina."
+const thirdParagraph2 = document.getElementById("pTextTarget2")
+thirdParagraph2.innerHTML = "Now in North Carolina, in the summer of 2020, Greg finally gave his fiance the courthouse wedding she never dreamed of in the Hoke County Municipal Courthouse, which doubled as the jail. Sometime went by and Greg was given the oppurtinity to attend Ranger Assessment and Selection where he was selected and sent to his current station in the great state of Washington as a proud member of Second Battalion Ranger Regiment. "
+const thirdParagraph3 = document.getElementById("pTextTarget3")
+thirdParagraph3.innerHTML = "Greg then was sent to the herculean task that all Rangers must overcome; Ranger School. After a brief stint as a Darby recycle, Greg earned the coveted Ranger Tab with flying colors at the sacrifice of 25lbs and the remaining shred of dignity he didn't know he had left. Now, with the power of the Tab propelling him forward in his career, obstacles in his way seemed trivial."
+const thirdH2 = document.getElementById("h2Target")
+thirdH2.innerHTML = "He's In The Army Now"
+const thirdImg = document.getElementById("insertImg")
+thirdImg.src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Distinctive_unit_insignia_of_the_75th_Ranger_Regiment.svg/188px-Distinctive_unit_insignia_of_the_75th_Ranger_Regiment.svg.png"
+thirdImg.alt="Image Is Fucked"
+})
 
-  const forthSlideInfo = document.getElementById("slideFour")
-  forthSlideInfo.addEventListener("click", () => {
-  const forthParagraph = document.getElementById("pTextTarget")
-  forthParagraph.innerHTML = "Married to his beautiful wife, Savannah in the summer of 2020. They began the joint efforts of paving their way in this unforgiving world one step at a time. They adopted their fur-baby, Winnie, in the winter of the same year. Greg thought that would be the end to the list of animals, until he came home from a long training event and now saw the old cat sitting on the couch glaring at him from across the room. Savannah thought that the dog was lonely so she made use of her executive level powers to make the cat, Anna, a new, permanent member of the Greg & Savannah clan. The cat is now welcomed as nothing more than an aquaintance but welcomed none the less."
-  const forthParagraph2 = document.getElementById("pTextTarget2")
-  forthParagraph2.innerHTML = "After a 5 day drive across the magnificence that is this incredible pillar of democracy, the United States, the newly formed family of 4 arrived at their newly bought first home. A new chapter of life would begin. As a welcoming gift from nature, they did not see the sun for 3 weeks. Savannah regarded the area as an expensive wasteland that should not exist. Greg agreed."
-  const forthParagraph3 = document.getElementById("pTextTarget3")
-  forthParagraph3.innerHTML = "On September 8, 2022, August Mason was born. The new source of inspiration and a constant drive to better themselves, little Augie became the trophy of the household. Child in tow evrywhere they go, Greg sees this small human as an almost-walking proof that his balls didn't get zapped after years spent working on high powered radars."
-  const forthH2 = document.getElementById("h2Target")
-  forthH2.innerHTML = "A Gift To Most"
-  const forthImg = document.getElementById("insertImg")
-  forthImg.src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/316832976_10226548702037403_8479827645148659049_n.jpg?stp=c0.99.1440.1440a_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=pOyYxbzpDXgAX_SKzwa&_nc_ht=scontent-sea1-1.xx&oh=00_AfAloGkWbXYMHOXVRhG_Q1wrIc7pBp4cjlkjgp1G82X1Vg&oe=63C50977"
-  forthImg.alt="Image Is Fucked"
-  })  
-</script>  
+const forthSlideInfo = document.getElementById("slideFour")
+forthSlideInfo.addEventListener("click", () => {
+const forthParagraph = document.getElementById("pTextTarget")
+forthParagraph.innerHTML = "Married to his beautiful wife, Savannah in the summer of 2020. They began the joint efforts of paving their way in this unforgiving world one step at a time. They adopted their fur-baby, Winnie, in the winter of the same year. Greg thought that would be the end to the list of animals, until he came home from a long training event and now saw the old cat sitting on the couch glaring at him from across the room. Savannah thought that the dog was lonely so she made use of her executive level powers to make the cat, Anna, a new, permanent member of the Greg & Savannah clan. The cat is now welcomed as nothing more than an aquaintance but welcomed none the less."
+const forthParagraph2 = document.getElementById("pTextTarget2")
+forthParagraph2.innerHTML = "After a 5 day drive across the magnificence that is this incredible pillar of democracy, the United States, the newly formed family of 4 arrived at their newly bought first home. A new chapter of life would begin. As a welcoming gift from nature, they did not see the sun for 3 weeks. Savannah regarded the area as an expensive wasteland that should not exist. Greg agreed."
+const forthParagraph3 = document.getElementById("pTextTarget3")
+forthParagraph3.innerHTML = "On September 8, 2022, August Mason was born. The new source of inspiration and a constant drive to better themselves, little Augie became the trophy of the household. Child in tow evrywhere they go, Greg sees this small human as an almost-walking proof that his balls didn't get zapped after years spent working on high powered radars."
+const forthH2 = document.getElementById("h2Target")
+forthH2.innerHTML = "A Gift To Most"
+const forthImg = document.getElementById("insertImg")
+forthImg.src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/316832976_10226548702037403_8479827645148659049_n.jpg?stp=c0.99.1440.1440a_dst-jpg_s851x315&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=pOyYxbzpDXgAX_SKzwa&_nc_ht=scontent-sea1-1.xx&oh=00_AfAloGkWbXYMHOXVRhG_Q1wrIc7pBp4cjlkjgp1G82X1Vg&oe=63C50977"
+forthImg.alt="Image Is Fucked"
+})</script>  
 
 </html>
