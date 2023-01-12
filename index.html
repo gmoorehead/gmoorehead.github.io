@@ -1,0 +1,70 @@
+<html>
+  <head>
+  
+  </head>
+  <body>
+  <div id="app" class="bigBoss">
+
+  <div>
+  <div id="homePage" class="tabcontent">
+  <h1>Life of Greg</h1>
+  <p>"I'll scream into the void until I hear an echo" -some BarFly</p>
+  </div>
+  
+  <div id="navy" class="tabcontent">
+  <h1>Navy Life</h1>
+  <p>Aviation Electonics Technician Petty Officer Second Class; AT2 </p>
+  </div>
+
+  <div id="civilian" class="tabcontent">
+  <h1>Civilian Life</h1>
+  <p>About 6 months in 2019</p>
+  </div>
+
+  <div id="army" class="tabcontent">
+  <h1>Army Life</h1>
+  <p>2019 - Now</p>
+  </div>
+
+  <div id="family" class="tabcontent">
+  <h1>Family</h1>
+  <p>Still Growing</p>
+  </div>
+  <div class="tabTree">
+  <button class="tablink" onclick="openLink('homePage', this, '#8AC0BB')" id="defaultOpen">Meet Greg</button>
+
+  <button class="tablink" onclick="openLink('navy', this, 'blue')" id="slideOne">2014 - 2019</button>
+
+  <button class="tablink" onclick="openLink('civilian', this, 'red')" id="slideTwo">2019</button>
+
+  <button class="tablink" onclick="openLink('army', this, 'green')" id="slideThree">2019 - Now</button>
+
+  <button class="tablink" onclick="openLink('family', this, 'orange')" id="slideFour">Family</button>  
+  </div>
+  </div>
+
+  <div id="chosenContent" class="bodyContent">
+  <h2 id="h2Target"></h2>
+  
+  <body id="bodyContent">
+  <img  id="insertImg" class="chosenImg">
+  <br />
+  <p id="pTextTarget">
+  </p>
+  <br />
+  <p id="pTextTarget2">
+  </p>
+  <br />
+  <p id="pTextTarget3">
+  </p> 
+  
+  </body>
+  
+  </div>
+
+</div>
+  
+  </body>
+
+
+</html>
