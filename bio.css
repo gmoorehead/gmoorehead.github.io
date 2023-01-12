@@ -15,12 +15,10 @@
   width: 25%;
 }
 
-/* Change background color of buttons on hover */
 .tablink:hover {
   background-color: #777;
 }
 
-/* Set default styles for tab content */
 .tabcontent {
   display: flex;
   justify-content: space-between;
@@ -29,13 +27,13 @@
   padding: 50px;
   text-align: center;
 }
-/* make the tabs stop stack by adding flex */
+
 .tabTree {
   display: flex;
   justify-content: space-around;
 }
 
-/* Style each tab content individually */
+
 #homePage { background-color: #8AC0BB; }
 #navy { background-color: blue; }
 #civilian { background-color: red; }
@@ -66,4 +64,3 @@ body, html {
   width: auto;
   height: auto;
 }
-/* Style the tab content (and add height:100% for full page content) */
